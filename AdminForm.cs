@@ -46,6 +46,7 @@ namespace StudentInfoSystem
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            btnLogout.Image = Properties.Resources._1logout;
             this.Hide();
             Form1 loginForm = new Form1();
             loginForm.Show();
@@ -53,18 +54,94 @@ namespace StudentInfoSystem
 
         private void btnStudent_Click(object sender, EventArgs e)
         {
+            btnColorChange_Click("Student");
             admin1.BringToFront();
+        }
+
+
+
+        private void btnTeacher_Click(object sender, EventArgs e)
+        {
+            btnColorChange_Click("Teacher");
+            admin_Teacher1.BringToFront();
+
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            dashboard1.BringToFront();
+            btnColorChange_Click("Dashboard");
 
         }
 
-        private void btnTeacher_Click(object sender, EventArgs e)
+        private void btnSubject_Click(object sender, EventArgs e)
         {
-            admin_Teacher1.BringToFront();
+            btnColorChange_Click("Subject");
+        }
+
+        private void btnLogs_Click(object sender, EventArgs e)
+        {
+            btnColorChange_Click("Logs");
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            btnColorChange_Click("Reports");
+
+        }
+        private void btnColorChange_Click(string Clicked)
+        {
+            switch (Clicked)
+            {
+                case "Dashboard":
+                    btnDashboard.Image = Properties.Resources._1dashboard;
+                    btnTeacher.Image = Properties.Resources._0teachers;
+                    btnLogs.Image = Properties.Resources._0logs;
+                    btnReports.Image = Properties.Resources._0reports;
+                    btnStudent.Image = Properties.Resources._00students;
+                    btnSubject.Image = Properties.Resources._0subjects;
+                    break;
+                case "Teacher":
+                    btnDashboard.Image = Properties.Resources._0dashboard;
+                    btnTeacher.Image = Properties.Resources._1teachers;
+                    btnLogs.Image = Properties.Resources._0logs;
+                    btnReports.Image = Properties.Resources._0reports;
+                    btnStudent.Image = Properties.Resources._00students;
+                    btnSubject.Image = Properties.Resources._0subjects;
+                    break;
+                case "Logs":
+                    btnDashboard.Image = Properties.Resources._0dashboard;
+                    btnTeacher.Image = Properties.Resources._0teachers;
+                    btnLogs.Image = Properties.Resources._1logs;
+                    btnReports.Image = Properties.Resources._0reports;
+                    btnStudent.Image = Properties.Resources._00students;
+                    btnSubject.Image = Properties.Resources._0subjects;
+                    break;
+                case "Reports":
+                    btnDashboard.Image = Properties.Resources._0dashboard;
+                    btnTeacher.Image = Properties.Resources._0teachers;
+                    btnLogs.Image = Properties.Resources._0logs;
+                    btnReports.Image = Properties.Resources._1reports;
+                    btnStudent.Image = Properties.Resources._00students;
+                    btnSubject.Image = Properties.Resources._0subjects;
+                    break;
+                case "Student":
+                    btnDashboard.Image = Properties.Resources._0dashboard;
+                    btnTeacher.Image = Properties.Resources._0teachers;
+                    btnLogs.Image = Properties.Resources._0logs;
+                    btnReports.Image = Properties.Resources._0reports;
+                    btnStudent.Image = Properties.Resources._1students;
+                    btnSubject.Image = Properties.Resources._0subjects;
+                    break;
+                case "Subject":
+                    btnDashboard.Image = Properties.Resources._0dashboard;
+                    btnTeacher.Image = Properties.Resources._0teachers;
+                    btnLogs.Image = Properties.Resources._0logs;
+                    btnReports.Image = Properties.Resources._0reports;
+                    btnStudent.Image = Properties.Resources._00students;
+                    btnSubject.Image = Properties.Resources._1subjects;
+                    break;
+            }
+            
         }
     }
 }

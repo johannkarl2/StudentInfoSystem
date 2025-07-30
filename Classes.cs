@@ -11,7 +11,10 @@ namespace StudentInfoSystem
     }
     public static class DatabaseConfig
     {
-        public static string ConnectionString = "Data Source=LAB4-PC42\\LAB2PC45;Initial Catalog=SIS1;Integrated Security=True;TrustServerCertificate=True";
+        // pc
+        public static string ConnectionString = "Data Source=DESKTOP-MQH085R\\SQLEXPRESS01;Initial Catalog=SIS1;Integrated Security=True;TrustServerCertificate=True";
+       //lab
+       // public static string ConnectionString = "Data Source=LAB4-PC42\\LAB2PC45;Initial Catalog=SIS1;Integrated Security=True;TrustServerCertificate=True";
     }
     public static class CurrentUser
     {

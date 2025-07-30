@@ -196,5 +196,50 @@
   <ItemGroup>
     <None Include="Resources\btndashboard.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0logs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0students.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0subjects.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0teachers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1logs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1students.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1subjects.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1teachers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00students.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
