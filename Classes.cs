@@ -11,7 +11,7 @@ namespace StudentInfoSystem
     }
     public static class DatabaseConfig
     {
-        public static string ConnectionString = "Data Source=desktop-mqh085r\\sqlexpress01;Initial Catalog=SIS1;Integrated Security=True;TrustServerCertificate=True";
+        public static string ConnectionString = "Data Source=LAB4-PC42\\LAB2PC45;Initial Catalog=SIS1;Integrated Security=True;TrustServerCertificate=True";
     }
     public static class CurrentUser
     {

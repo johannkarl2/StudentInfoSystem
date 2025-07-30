@@ -63,8 +63,8 @@ create table User_login(
 	
 create table Logs(Log_ID int primary key not null identity(1,1),DateTime DateTime default getdate(),Name Varchar(50),Action varchar(100))
 
-
-	select * from Student
+insert into Role(role,role_id) values ('Admin',1),('Teacher',2),('Student',3)
+	select * from admin
 	select * from User_login
 	delete from User_login
 	delete from User_login where user_id = 1
@@ -73,15 +73,19 @@ create table Logs(Log_ID int primary key not null identity(1,1),DateTime DateTim
 
 	insert into Teacher(first_name,last_name,email,phone,hire_date,department,specialization,status,role_id) values ('tandang','sora','ts@gmail.com',205468461,GETDATE(),'CCS','OOP','Active',2)
 
+	insert into Student(first_name,last_name,date_of_birth,gender,email,phone,address,enrollment_date,status,role_id) values 
+	('yowan','karl','2002-10-02','male','yowan@gmail.com',123456,'lapulapu',GETDATE(),'Active',3),('John Paul','Cantila','2007-6-17','male','ccs.cantila@gmail.com',123456,'mingla',GETDATE(),'Active',3)
+
 	
-	insert into User_login(username,password,role_id,Uniq_id) values ('admin','123',1,1)
-	insert into User_login(username,password,role_id,Uniq_id) values ('teacher','123',2,1)
-	insert into User_login(username,password,role_id,Uniq_id) values ('andres','123',1,2)
-	insert into User_login(username,password,role_id,Uniq_id) values ('student1','123',3,1)
+	insert into User_login(username,password,role_id,Uniq_id) values ('admin','123',1,1),('teacher','123',2,1),('andres','123',1,2),('student1','123',3,1)
+	
 		
 
-
-	insert into Role(role,role_id) values ('Admin',1),('Teacher',2),('Student',3)
+		SELECT *
+FROM User_login AS ul
+INNER JOIN Admin AS a ON ul.uniq_id = a.admin_id
+WHERE ul.Username = 'admin' AND ul.Password = '123' 
+	
 		if user_login.role_id = 1
 		select * from User_login inner join admin on User_login.Uniq_id = Admin.admin_id
 	where User_login.role_id = 1
@@ -101,5 +105,4 @@ LEFT JOIN Teacher t ON u.Uniq_id = t.teacher_id AND u.role_id = 2
 	 SELECT * FROM User_login Admin inner join admin on user_login.uniq_id = Admin.admin_id WHERE Username = @username AND Password = @password
 		
 
-		insert into Student(first_name,last_name,date_of_birth,gender,email,phone,address,enrollment_date,status,role_id) values 
-	('yowan','karl','2002-10-02','male','yowan@gmail.com',123456,'lapulapu',GETDATE(),'Active',3)
+		

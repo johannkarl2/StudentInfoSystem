@@ -56,16 +56,18 @@
             // 
             // pnlUCholder
             // 
+            this.pnlUCholder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
             this.pnlUCholder.Controls.Add(this.dashboard1);
             this.pnlUCholder.Controls.Add(this.admin1);
             this.pnlUCholder.Controls.Add(this.admin_Teacher1);
-            this.pnlUCholder.Location = new System.Drawing.Point(260, 12);
+            this.pnlUCholder.Location = new System.Drawing.Point(259, -2);
             this.pnlUCholder.Name = "pnlUCholder";
-            this.pnlUCholder.Size = new System.Drawing.Size(724, 514);
+            this.pnlUCholder.Size = new System.Drawing.Size(749, 548);
             this.pnlUCholder.TabIndex = 15;
             // 
             // lblwelcome
             // 
+            this.lblwelcome.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblwelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblwelcome.ForeColor = System.Drawing.Color.White;
             this.lblwelcome.Location = new System.Drawing.Point(6, 92);
@@ -78,11 +80,10 @@
             // btnDashboard
             // 
             this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.btnDashboard.Image = global::StudentInfoSystem.Properties.Resources.btndashboard;
             this.btnDashboard.Location = new System.Drawing.Point(9, 141);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(245, 45);
+            this.btnDashboard.Size = new System.Drawing.Size(241, 41);
             this.btnDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.btnDashboard.TabIndex = 14;
             this.btnDashboard.TabStop = false;
@@ -190,10 +191,11 @@
             // 
             // dashboard1
             // 
-            this.dashboard1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.dashboard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
+            this.dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboard1.Location = new System.Drawing.Point(0, 0);
             this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(724, 514);
+            this.dashboard1.Size = new System.Drawing.Size(749, 548);
             this.dashboard1.TabIndex = 1;
             // 
             // admin1
@@ -202,7 +204,7 @@
             this.admin1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.admin1.Location = new System.Drawing.Point(0, 0);
             this.admin1.Name = "admin1";
-            this.admin1.Size = new System.Drawing.Size(724, 514);
+            this.admin1.Size = new System.Drawing.Size(749, 548);
             this.admin1.TabIndex = 0;
             // 
             // admin_Teacher1
@@ -217,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(34)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(40)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(1009, 541);
             this.Controls.Add(this.lblwelcome);
             this.Controls.Add(this.pnlUCholder);
@@ -231,6 +233,7 @@
             this.Controls.Add(this.btnTeacher);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
             this.Load += new System.EventHandler(this.AdminForm_Load);
             this.pnlUCholder.ResumeLayout(false);
