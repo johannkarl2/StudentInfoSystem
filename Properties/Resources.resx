@@ -121,8 +121,8 @@
   <data name="rectangle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rectangle2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnlogs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnlogs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnsubject" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnsubject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,14 +130,17 @@
   <data name="logoutbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoutbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hoverlogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hoverlogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="studentwithlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\studentwithlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="0students" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0students.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="0teachers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0teachers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,11 +151,8 @@
   <data name="loginbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loginbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reportsbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reportsbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rectangle 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rectangle 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1teachers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1teachers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LOGOSIS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGOSIS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +166,8 @@
   <data name="btnteacher" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnteacher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnlogs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnlogs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1reports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,8 +184,8 @@
   <data name="logsbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logsbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1teachers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1teachers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rectangle 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logwithlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logwithlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,11 +196,14 @@
   <data name="0subjects" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0subjects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hoverlogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hoverlogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reportsbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reportsbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="00students" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\00students.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1students" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1students.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,7 +229,10 @@
   <data name="Rectangle 1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="00students" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\00students.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="0add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

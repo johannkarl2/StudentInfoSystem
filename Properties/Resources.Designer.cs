@@ -73,6 +73,16 @@ namespace StudentInfoSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0add {
+            get {
+                object obj = ResourceManager.GetObject("0add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _0dashboard {
             get {
                 object obj = ResourceManager.GetObject("0dashboard", resourceCulture);
@@ -136,6 +146,16 @@ namespace StudentInfoSystem.Properties {
         internal static System.Drawing.Bitmap _0teachers {
             get {
                 object obj = ResourceManager.GetObject("0teachers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1add {
+            get {
+                object obj = ResourceManager.GetObject("1add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

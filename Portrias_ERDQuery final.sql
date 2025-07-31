@@ -68,6 +68,13 @@ create table Logs(Log_ID int primary key not null identity(1,1),DateTime DateTim
 
 insert into Role(role,role_id) values ('Admin',1),('Teacher',2),('Student',3)
 insert into Gender (gender_id,Gender) values (1,'Male'),(2,'Female')
+insert into Admin(email,full_name) values ('ccs.JoseRizal@gmail.com','Jose P. Rizal'),('ccs.bonifacio@gmail.com','andres bonifacio')
+insert into Teacher(first_name,last_name,email,phone,hire_date,department,specialization,status,role_id) values ('tandang','sora','ts@gmail.com',205468461,GETDATE(),'CCS','OOP','Active',2)
+insert into Student(first_name,last_name,date_of_birth,gender,email,phone,address,enrollment_date,status,role_id) values 
+('yowan','karl','2002-10-02',1,'yowan@gmail.com',123456,'lapulapu',GETDATE(),'Active',3),('John Paul','Cantila','2007-6-17',1,'ccs.cantila@gmail.com',123456,'mingla',GETDATE(),'Active',3)
+insert into User_login(username,password,role_id,Uniq_id) values ('admin','123',1,1),('teacher','123',2,1),('andres','123',1,2),('student1','123',3,1)
+
+
 	select * from Teacher
 		select * from Student
 		drop table student
@@ -77,15 +84,10 @@ insert into Gender (gender_id,Gender) values (1,'Male'),(2,'Female')
 	delete from student
 	delete from User_login where user_id = 1
 	drop table admin
-	insert into Admin(email,full_name) values ('ccs.JoseRizal@gmail.com','Jose P. Rizal'),('ccs.bonifacio@gmail.com','andres bonifacio')
 
-	insert into Teacher(first_name,last_name,email,phone,hire_date,department,specialization,status,role_id) values ('tandang','sora','ts@gmail.com',205468461,GETDATE(),'CCS','OOP','Active',2)
 
-	insert into Student(first_name,last_name,date_of_birth,gender,email,phone,address,enrollment_date,status,role_id) values 
-	('yowan','karl','2002-10-02',1,'yowan@gmail.com',123456,'lapulapu',GETDATE(),'Active',3),('John Paul','Cantila','2007-6-17',1,'ccs.cantila@gmail.com',123456,'mingla',GETDATE(),'Active',3)
 
 	
-	insert into User_login(username,password,role_id,Uniq_id) values ('admin','123',1,1),('teacher','123',2,1),('andres','123',1,2),('student1','123',3,1)
 	
 		
 		SELECT *

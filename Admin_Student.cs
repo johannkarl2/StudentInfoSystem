@@ -50,5 +50,16 @@ namespace StudentInfoSystem
         {
             LoadData();
         }
+
+        private void btnAdd_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnAdd.Image = Properties.Resources._1add;
+        }
+
+        private void btnAdd_MouseUp(object sender, MouseEventArgs e)
+        {
+            btnAdd.Image = Properties.Resources._0add;
+
+        }
     }
 }

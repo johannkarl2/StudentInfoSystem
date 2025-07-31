@@ -74,7 +74,7 @@ namespace StudentInfoSystem
                                 SELECT *
                                 FROM User_login AS ul
                                 INNER JOIN Admin AS a ON ul.uniq_id = a.admin_id
-                                WHERE ul.Username = @username AND ul.Password = @password AND ul.role_id = 1"; 
+                                WHERE ul.Username = @username AND ul.Password = @password"; 
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@username", txtUsername.Text);
             cmd.Parameters.AddWithValue("@password", txtPassword.Text);
