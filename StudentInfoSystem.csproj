@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -92,6 +93,24 @@
     <Compile Include="TeacherForm.Designer.cs">
       <DependentUpon>TeacherForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_AddStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AddStudent.Designer.cs">
+      <DependentUpon>UC_AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_AddTeacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AddTeacher.Designer.cs">
+      <DependentUpon>UC_AddTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_RemoveStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_RemoveStudent.Designer.cs">
+      <DependentUpon>UC_RemoveStudent.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin_Student.resx">
       <DependentUpon>Admin_Student.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +136,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC_AddStudent.resx">
+      <DependentUpon>UC_AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AddTeacher.resx">
+      <DependentUpon>UC_AddTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_RemoveStudent.resx">
+      <DependentUpon>UC_RemoveStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -246,6 +274,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REMOVE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1remove.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

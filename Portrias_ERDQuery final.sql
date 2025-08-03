@@ -71,11 +71,18 @@ insert into Gender (gender_id,Gender) values (1,'Male'),(2,'Female')
 insert into Admin(email,full_name) values ('ccs.JoseRizal@gmail.com','Jose P. Rizal'),('ccs.bonifacio@gmail.com','andres bonifacio')
 insert into Teacher(first_name,last_name,email,phone,hire_date,department,specialization,status,role_id) values ('tandang','sora','ts@gmail.com',205468461,GETDATE(),'CCS','OOP','Active',2)
 insert into Student(first_name,last_name,date_of_birth,gender,email,phone,address,enrollment_date,status,role_id) values 
-('yowan','karl','2002-10-02',1,'yowan@gmail.com',123456,'lapulapu',GETDATE(),'Active',3),('John Paul','Cantila','2007-6-17',1,'ccs.cantila@gmail.com',123456,'mingla',GETDATE(),'Active',3)
+('yowan','karl','2002-10-02',1,'yowan@gmail.com',123456,'lapulapu','2025-08-03','Active',3),('John Paul','Cantila','2007-6-17',1,'ccs.cantila@gmail.com',123456,'mingla',GETDATE(),'Active',3)
 insert into User_login(username,password,role_id,Uniq_id) values ('admin','123',1,1),('teacher','123',2,1),('andres','123',1,2),('student1','123',3,1)
 
+select s.student_id,s.first_name,s.last_name,s.date_of_birth,g.Gender,s.email,s.phone,s.address,s.enrollment_date,s.status,s.role_id from Student as S
+left join Gender as g on g.gender_id = s.gender
 
-	select * from Teacher
+
+delete from User_login
+delete from Student 
+ALTER TABLE Student
+ALTER COLUMN phone NVARCHAR(15);
+	select * from gender
 		select * from Student
 		drop table student
 		DBCC CHECKIDENT ('Student', RESEED, 0);

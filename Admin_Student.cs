@@ -17,9 +17,9 @@ namespace StudentInfoSystem
         {
             InitializeComponent();
         }
-        private void LoadData()
+        public void LoadData()
         {
-            string query = "SELECT * FROM Student";
+            string query = "select s.student_id,s.first_name,s.last_name,s.date_of_birth,g.Gender,s.email,s.phone,s.address,s.enrollment_date,s.status,s.role_id from Student as S\r\nleft join Gender as g on g.gender_id = s.gender";
 
             using (SqlConnection conn = new SqlConnection(DatabaseConfig.ConnectionString))
             {
@@ -53,13 +53,56 @@ namespace StudentInfoSystem
 
         private void btnAdd_MouseDown(object sender, MouseEventArgs e)
         {
-            btnAdd.Image = Properties.Resources._1add;
+            btnAdd.Image = Properties.Resources.add0;
         }
 
         private void btnAdd_MouseUp(object sender, MouseEventArgs e)
         {
-            btnAdd.Image = Properties.Resources._0add;
+            btnAdd.Image = Properties.Resources.add1;
 
+        }
+
+        private void btnRemove_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnRemove.Image = Properties.Resources.remove0;
+        }
+
+        private void btnRemove_MouseUp(object sender, MouseEventArgs e)
+        {
+            btnRemove.Image = Properties.Resources.REMOVE1;
+
+        }
+        public event EventHandler StudentAdded;
+
+        
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            UC_AddStudent addStudent = new UC_AddStudent();
+
+            // Subscribe to the event
+            addStudent.StudentAdded += (s, ev) =>
+            {
+                LoadData(); // Reload data in DataGridView
+            };
+
+            Controls.Add(addStudent);
+            addStudent.BringToFront();
+            addStudent.Location = new Point((this.ClientSize.Width - addStudent.Width) / 2, (this.ClientSize.Height - addStudent.Height) / 2);
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            UC_RemoveStudent removestudent = new UC_RemoveStudent();
+
+            removestudent.StudentRemoved += (s, ev) =>
+            {
+                LoadData(); // Reload data in DataGridView
+            };
+
+            Controls.Add(removestudent);
+            removestudent.BringToFront();
+            removestudent.Location = new Point((this.ClientSize.Width - removestudent.Width) / 2, (this.ClientSize.Height - removestudent.Height) / 2);
         }
     }
 }
+

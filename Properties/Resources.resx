@@ -148,6 +148,9 @@
   <data name="0logs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0logs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cancel0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="loginbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loginbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -165,6 +168,9 @@
   </data>
   <data name="btnteacher" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnteacher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnlogs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnlogs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +193,11 @@
   <data name="Rectangle 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logwithlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logwithlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1logs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1logs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,8 +211,17 @@
   <data name="00students" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\00students.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cancel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logwithlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logwithlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="REMOVE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\REMOVE1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1students" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1students.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,8 +235,14 @@
   <data name="1subjects" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1subjects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="add0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btndashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btndashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnstudent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnstudent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,10 +253,16 @@
   <data name="Rectangle 1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="0cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="0remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

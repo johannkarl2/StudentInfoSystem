@@ -83,6 +83,16 @@ namespace StudentInfoSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0cancel {
+            get {
+                object obj = ResourceManager.GetObject("0cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _0dashboard {
             get {
                 object obj = ResourceManager.GetObject("0dashboard", resourceCulture);
@@ -106,6 +116,16 @@ namespace StudentInfoSystem.Properties {
         internal static System.Drawing.Bitmap _0logs {
             get {
                 object obj = ResourceManager.GetObject("0logs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _0remove {
+            get {
+                object obj = ResourceManager.GetObject("0remove", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,6 +183,16 @@ namespace StudentInfoSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1cancel {
+            get {
+                object obj = ResourceManager.GetObject("1cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1dashboard {
             get {
                 object obj = ResourceManager.GetObject("1dashboard", resourceCulture);
@@ -186,6 +216,16 @@ namespace StudentInfoSystem.Properties {
         internal static System.Drawing.Bitmap _1logs {
             get {
                 object obj = ResourceManager.GetObject("1logs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1remove {
+            get {
+                object obj = ResourceManager.GetObject("1remove", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +266,26 @@ namespace StudentInfoSystem.Properties {
         internal static System.Drawing.Bitmap _1teachers {
             get {
                 object obj = ResourceManager.GetObject("1teachers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add0 {
+            get {
+                object obj = ResourceManager.GetObject("add0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add1 {
+            get {
+                object obj = ResourceManager.GetObject("add1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +356,26 @@ namespace StudentInfoSystem.Properties {
         internal static System.Drawing.Bitmap btnteacher {
             get {
                 object obj = ResourceManager.GetObject("btnteacher", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cancel0 {
+            get {
+                object obj = ResourceManager.GetObject("Cancel0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cancel1 {
+            get {
+                object obj = ResourceManager.GetObject("Cancel1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +486,26 @@ namespace StudentInfoSystem.Properties {
         internal static System.Drawing.Bitmap rectangle2 {
             get {
                 object obj = ResourceManager.GetObject("rectangle2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove0 {
+            get {
+                object obj = ResourceManager.GetObject("remove0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap REMOVE1 {
+            get {
+                object obj = ResourceManager.GetObject("REMOVE1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
