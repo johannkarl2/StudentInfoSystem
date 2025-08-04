@@ -17,11 +17,11 @@ namespace StudentInfoSystem
         //lab
         //public static string ConnectionString = "Data Source=LAB4-PC32\\LAB2PC43;Initial Catalog=SIS1;Integrated Security=True;TrustServerCertificate=True";
 
-        // public static string ConnectionString = "Data Source=LAB4-PC42\\LAB2PC45;Initial Catalog=SIS1;Integrated Security=True;TrustServerCertificate=True";
+         public static string ConnectionString = "Data Source=LAB4-PC42\\LAB2PC45;Initial Catalog=SIS1;Integrated Security=True;TrustServerCertificate=True";
 
         //laptop
         
-            public static string ConnectionString = "Data Source=DESKTOP-ETJN7ST;Initial Catalog=SIS1;Integrated Security=True;TrustServerCertificate=True";
+           // public static string ConnectionString = "Data Source=DESKTOP-ETJN7ST;Initial Catalog=SIS1;Integrated Security=True;TrustServerCertificate=True";
     }
     public static class CurrentUser
     {

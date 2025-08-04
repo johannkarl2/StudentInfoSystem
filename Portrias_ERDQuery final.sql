@@ -66,7 +66,6 @@ create table User_login(
 	
 create table Logs(Log_ID int primary key not null identity(1,1),DateTime DateTime default getdate(),Name Varchar(50),Action varchar(100))
 create table Department(Department_ID int primary key not null,Department_Name varchar(50))
-
 insert into Role(role,role_id) values ('Admin',1),('Teacher',2),('Student',3)
 insert into Gender (gender_id,Gender) values (1,'Male'),(2,'Female')
 insert into Admin(email,full_name) values ('ccs.JoseRizal@gmail.com','Jose P. Rizal'),('ccs.bonifacio@gmail.com','andres bonifacio')
@@ -75,12 +74,15 @@ insert into Student(first_name,last_name,date_of_birth,gender,email,phone,addres
 ('yowan','karl','2002-10-02',1,'yowan@gmail.com',123456,'lapulapu','2025-08-03','Active',3),('John Paul','Cantila','2007-6-17',1,'ccs.cantila@gmail.com',123456,'mingla',GETDATE(),'Active',3)
 insert into User_login(username,password,role_id,Uniq_id) values ('admin','123',1,1),('teacher','123',2,1),('andres','123',1,2),('student1','123',3,1)
 insert into Department(Department_ID,Department_Name) values (1,'CCS'),(2,'CBM'),(3,'CASP'),(4,'CN'),(5,'CCJ')
+
+
+
 select s.student_id,s.first_name,s.last_name,s.date_of_birth,g.Gender,s.email,s.phone,s.address,s.enrollment_date,s.status,s.role_id from Student as S
 left join Gender as g on g.gender_id = s.gender
 
 select COUNT(*) as Number_of_rows
 from Student
-SELECT * FROM Department
+SELECT * FROM Role
 delete from User_login
 delete from Student 
 ALTER TABLE Teacher

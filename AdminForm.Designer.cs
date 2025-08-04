@@ -28,15 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlUCholder = new System.Windows.Forms.Panel();
-            this.dashboard1 = new StudentInfoSystem.Dashboard();
-            this.admin1 = new StudentInfoSystem.Admin();
-            this.admin_Teacher1 = new StudentInfoSystem.Admin_Teacher();
             this.lblwelcome = new System.Windows.Forms.Label();
             this.pnlBTNS = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnDashboard = new System.Windows.Forms.PictureBox();
             this.btnSubject = new System.Windows.Forms.PictureBox();
             this.btnLogs = new System.Windows.Forms.PictureBox();
@@ -44,8 +40,10 @@
             this.btnStudent = new System.Windows.Forms.PictureBox();
             this.btnTeacher = new System.Windows.Forms.PictureBox();
             this.btnLogout = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.PictureBox();
+            this.admin1 = new StudentInfoSystem.Admin();
+            this.admin_Teacher1 = new StudentInfoSystem.Admin_Teacher();
+            this.admin_Dashboard1 = new StudentInfoSystem.Admin_Dashboard();
             this.pnlUCholder.SuspendLayout();
             this.pnlBTNS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
@@ -62,39 +60,13 @@
             // 
             this.pnlUCholder.BackColor = System.Drawing.Color.White;
             this.pnlUCholder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlUCholder.Controls.Add(this.dashboard1);
+            this.pnlUCholder.Controls.Add(this.admin_Dashboard1);
             this.pnlUCholder.Controls.Add(this.admin1);
             this.pnlUCholder.Controls.Add(this.admin_Teacher1);
             this.pnlUCholder.Location = new System.Drawing.Point(256, 8);
             this.pnlUCholder.Name = "pnlUCholder";
             this.pnlUCholder.Size = new System.Drawing.Size(748, 538);
             this.pnlUCholder.TabIndex = 15;
-            // 
-            // dashboard1
-            // 
-            this.dashboard1.BackColor = System.Drawing.Color.White;
-            this.dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dashboard1.Location = new System.Drawing.Point(0, 0);
-            this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(746, 536);
-            this.dashboard1.TabIndex = 1;
-            // 
-            // admin1
-            // 
-            this.admin1.BackColor = System.Drawing.Color.Transparent;
-            this.admin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.admin1.Location = new System.Drawing.Point(0, 0);
-            this.admin1.Name = "admin1";
-            this.admin1.Size = new System.Drawing.Size(746, 536);
-            this.admin1.TabIndex = 0;
-            // 
-            // admin_Teacher1
-            // 
-            this.admin_Teacher1.BackColor = System.Drawing.Color.Transparent;
-            this.admin_Teacher1.Location = new System.Drawing.Point(0, 0);
-            this.admin_Teacher1.Name = "admin_Teacher1";
-            this.admin_Teacher1.Size = new System.Drawing.Size(724, 514);
-            this.admin_Teacher1.TabIndex = 2;
             // 
             // lblwelcome
             // 
@@ -121,6 +93,13 @@
             this.pnlBTNS.Name = "pnlBTNS";
             this.pnlBTNS.Size = new System.Drawing.Size(247, 404);
             this.pnlBTNS.TabIndex = 17;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(237, -2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(38, 100);
+            this.panel1.TabIndex = 18;
             // 
             // btnDashboard
             // 
@@ -220,13 +199,6 @@
             this.btnLogout.Tag = "logout";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(237, -2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(38, 100);
-            this.panel1.TabIndex = 18;
-            // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
@@ -237,6 +209,30 @@
             this.btnLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnLogin.TabIndex = 4;
             this.btnLogin.TabStop = false;
+            // 
+            // admin1
+            // 
+            this.admin1.BackColor = System.Drawing.Color.Transparent;
+            this.admin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.admin1.Location = new System.Drawing.Point(0, 0);
+            this.admin1.Name = "admin1";
+            this.admin1.Size = new System.Drawing.Size(746, 536);
+            this.admin1.TabIndex = 0;
+            // 
+            // admin_Teacher1
+            // 
+            this.admin_Teacher1.BackColor = System.Drawing.Color.Transparent;
+            this.admin_Teacher1.Location = new System.Drawing.Point(0, 0);
+            this.admin_Teacher1.Name = "admin_Teacher1";
+            this.admin_Teacher1.Size = new System.Drawing.Size(724, 514);
+            this.admin_Teacher1.TabIndex = 2;
+            // 
+            // admin_Dashboard1
+            // 
+            this.admin_Dashboard1.Location = new System.Drawing.Point(0, 3);
+            this.admin_Dashboard1.Name = "admin_Dashboard1";
+            this.admin_Dashboard1.Size = new System.Drawing.Size(724, 514);
+            this.admin_Dashboard1.TabIndex = 3;
             // 
             // AdminForm
             // 
@@ -278,14 +274,13 @@
         private System.Windows.Forms.PictureBox btnTeacher;
         private System.Windows.Forms.PictureBox btnStudent;
         private System.Windows.Forms.PictureBox btnReports;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox btnDashboard;
         private System.Windows.Forms.Panel pnlUCholder;
         private System.Windows.Forms.Label lblwelcome;
         private Admin admin1;
-        private Dashboard dashboard1;
         private Admin_Teacher admin_Teacher1;
         private System.Windows.Forms.Panel pnlBTNS;
         private System.Windows.Forms.Panel panel1;
+        private Admin_Dashboard admin_Dashboard1;
     }
 }
