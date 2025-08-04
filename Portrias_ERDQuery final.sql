@@ -22,7 +22,7 @@ create table Student(
 	date_of_birth date,
 	gender int foreign key references Gender(gender_id),
 	email varchar(50),
-	phone int,
+	phone NVARCHAR(15),
 	address varchar(50),
 	enrollment_date date,
 	status varchar(20),
@@ -33,9 +33,9 @@ create table Teacher(
 	first_name varchar(50),
 	last_name varchar(50),
 	email varchar(50),
-	phone int,
+	phone NVARCHAR(15),
 	hire_date date,
-	department varchar(20),
+	department int foreign key references Department(Department_Id),
 	specialization varchar(20),
 	status varchar(20),
 	role_id int foreign key references Role(role_id))
@@ -65,34 +65,38 @@ create table User_login(
 	Uniq_id int not null)
 	
 create table Logs(Log_ID int primary key not null identity(1,1),DateTime DateTime default getdate(),Name Varchar(50),Action varchar(100))
+create table Department(Department_ID int primary key not null,Department_Name varchar(50))
 
 insert into Role(role,role_id) values ('Admin',1),('Teacher',2),('Student',3)
 insert into Gender (gender_id,Gender) values (1,'Male'),(2,'Female')
 insert into Admin(email,full_name) values ('ccs.JoseRizal@gmail.com','Jose P. Rizal'),('ccs.bonifacio@gmail.com','andres bonifacio')
-insert into Teacher(first_name,last_name,email,phone,hire_date,department,specialization,status,role_id) values ('tandang','sora','ts@gmail.com',205468461,GETDATE(),'CCS','OOP','Active',2)
+insert into Teacher(first_name,last_name,email,phone,hire_date,department,specialization,status,role_id) values ('tandang','sora','ts@gmail.com',205468461,GETDATE(),1,'OOP','Active',2)
 insert into Student(first_name,last_name,date_of_birth,gender,email,phone,address,enrollment_date,status,role_id) values 
 ('yowan','karl','2002-10-02',1,'yowan@gmail.com',123456,'lapulapu','2025-08-03','Active',3),('John Paul','Cantila','2007-6-17',1,'ccs.cantila@gmail.com',123456,'mingla',GETDATE(),'Active',3)
 insert into User_login(username,password,role_id,Uniq_id) values ('admin','123',1,1),('teacher','123',2,1),('andres','123',1,2),('student1','123',3,1)
-
+insert into Department(Department_ID,Department_Name) values (1,'CCS'),(2,'CBM'),(3,'CASP'),(4,'CN'),(5,'CCJ')
 select s.student_id,s.first_name,s.last_name,s.date_of_birth,g.Gender,s.email,s.phone,s.address,s.enrollment_date,s.status,s.role_id from Student as S
 left join Gender as g on g.gender_id = s.gender
 
-
+select COUNT(*) as Number_of_rows
+from Student
+SELECT * FROM Department
 delete from User_login
 delete from Student 
-ALTER TABLE Student
-ALTER COLUMN phone NVARCHAR(15);
+ALTER TABLE Teacher
+Add constraint FK_Department  foreign key(department) references Department(department_id);
 	select * from gender
-		select * from Student
-		drop table student
+		select * from Teacher
+		drop table Teacher
 		DBCC CHECKIDENT ('Student', RESEED, 0);
 
-	select * from User_login
-	delete from student
+	select * from Department
+	delete from teacher
 	delete from User_login where user_id = 1
 	drop table admin
 
-
+	select t.teacher_id,t.first_name,t.last_name,t.email,t.phone,t.hire_date,d.Department_Name,t.specialization,t.status,t.role_id from Teacher as t
+	left join Department as d on d.Department_ID = t.department
 
 	
 	

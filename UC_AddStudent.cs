@@ -58,49 +58,53 @@ namespace StudentInfoSystem
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if(!(txtEmail.Text.Contains("@") && txtEmail.Text.EndsWith(".com")))
-            {
-                MessageBox.Show("Please enter a valid email address.");
-                return;
-            }else if (!string.IsNullOrWhiteSpace(txtFirstName.Text) &&
+             if (!string.IsNullOrWhiteSpace(txtFirstName.Text) &&
         !string.IsNullOrWhiteSpace(txtLastName.Text) &&
         !string.IsNullOrWhiteSpace(comboBox1.Text) &&
         !string.IsNullOrWhiteSpace(txtEmail.Text) &&
         !string.IsNullOrWhiteSpace(txtPhone.Text) &&
         !string.IsNullOrWhiteSpace(txtAddress.Text))
             {
-                int gender = comboBox1.SelectedIndex + 1;
-                string formattedDate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
-                string query = "INSERT INTO Student (first_name,last_name,date_of_birth,gender,phone,email,enrollment_date,role_id,status,address) VALUES (@first_name, @last_name, @date_of_birth, @gender, @phone_number, @email,GETDATE(),3,'Active',@address)";
-                SqlConnection sqlConnection = new SqlConnection(DatabaseConfig.ConnectionString);
-                sqlConnection.Open();
-                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
-                sqlCommand.Parameters.AddWithValue("@first_name", txtFirstName.Text);
-                sqlCommand.Parameters.AddWithValue("@last_name", txtLastName.Text);
-                sqlCommand.Parameters.AddWithValue("@date_of_birth", formattedDate);
-                sqlCommand.Parameters.AddWithValue("@gender", gender);
-                sqlCommand.Parameters.AddWithValue("@phone_number", txtPhone.Text);
-                sqlCommand.Parameters.AddWithValue("@email", txtEmail.Text);
-                sqlCommand.Parameters.AddWithValue("@address", txtAddress.Text);
-
-                try
+                if (!(txtEmail.Text.Contains("@") && txtEmail.Text.EndsWith(".com")))
                 {
-                    sqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("Student added successfully.");
-                    ClearFields();
-                    StudentAdded?.Invoke(this, EventArgs.Empty); // Notify parent
-
-
-                    this.Dispose();
-
+                    MessageBox.Show("Please enter a valid email address.");
+                    return;
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("An error occurred while adding the student: " + ex.Message);
-                }
-                finally
-                {
-                    sqlConnection.Close();
+                    int gender = comboBox1.SelectedIndex + 1;
+                    string formattedDate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+                    string query = "INSERT INTO Student (first_name,last_name,date_of_birth,gender,phone,email,enrollment_date,role_id,status,address) VALUES (@first_name, @last_name, @date_of_birth, @gender, @phone_number, @email,GETDATE(),3,'Active',@address)";
+                    SqlConnection sqlConnection = new SqlConnection(DatabaseConfig.ConnectionString);
+                    sqlConnection.Open();
+                    SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                    sqlCommand.Parameters.AddWithValue("@first_name", txtFirstName.Text);
+                    sqlCommand.Parameters.AddWithValue("@last_name", txtLastName.Text);
+                    sqlCommand.Parameters.AddWithValue("@date_of_birth", formattedDate);
+                    sqlCommand.Parameters.AddWithValue("@gender", gender);
+                    sqlCommand.Parameters.AddWithValue("@phone_number", txtPhone.Text);
+                    sqlCommand.Parameters.AddWithValue("@email", txtEmail.Text);
+                    sqlCommand.Parameters.AddWithValue("@address", txtAddress.Text);
+
+                    try
+                    {
+                        sqlCommand.ExecuteNonQuery();
+                        MessageBox.Show("Student added successfully.");
+                        ClearFields();
+                        StudentAdded?.Invoke(this, EventArgs.Empty); // Notify parent
+
+
+                        this.Dispose();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred while adding the student: " + ex.Message);
+                    }
+                    finally
+                    {
+                        sqlConnection.Close();
+                    }
                 }
             }
             else

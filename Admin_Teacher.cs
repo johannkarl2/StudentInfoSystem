@@ -19,7 +19,7 @@ namespace StudentInfoSystem
         }
         private void LoadData()
         {
-            string query = "SELECT * FROM Teacher";
+            string query = "select t.teacher_id,t.first_name,t.last_name,t.email,t.phone,t.hire_date,d.Department_Name,t.specialization,t.status,t.role_id from Teacher as t left join Department as d on d.Department_ID = t.department";
 
             using (SqlConnection conn = new SqlConnection(DatabaseConfig.ConnectionString))
             {
