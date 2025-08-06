@@ -32,9 +32,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnUpdate = new System.Windows.Forms.PictureBox();
             this.btnRemove = new System.Windows.Forms.PictureBox();
             this.btnAdd = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRemove)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             this.SuspendLayout();
@@ -78,12 +80,27 @@
             this.dataGridView1.Size = new System.Drawing.Size(721, 331);
             this.dataGridView1.TabIndex = 0;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.Image = global::StudentInfoSystem.Properties.Resources.update1;
+            this.btnUpdate.Location = new System.Drawing.Point(599, 429);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(115, 39);
+            this.btnUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnUpdate.TabIndex = 17;
+            this.btnUpdate.TabStop = false;
+            this.btnUpdate.Tag = "I";
+            this.btnUpdate.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnUpdate_MouseDown);
+            this.btnUpdate.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnUpdate_MouseUp);
+            // 
             // btnRemove
             // 
             this.btnRemove.BackColor = System.Drawing.Color.Transparent;
             this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRemove.Image = global::StudentInfoSystem.Properties.Resources.REMOVE1;
-            this.btnRemove.Location = new System.Drawing.Point(559, 429);
+            this.btnRemove.Location = new System.Drawing.Point(468, 429);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(115, 39);
             this.btnRemove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -99,7 +116,7 @@
             this.btnAdd.BackColor = System.Drawing.Color.Transparent;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Image = global::StudentInfoSystem.Properties.Resources.add1;
-            this.btnAdd.Location = new System.Drawing.Point(473, 429);
+            this.btnAdd.Location = new System.Drawing.Point(369, 429);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(80, 39);
             this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -115,6 +132,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridView1);
@@ -122,6 +140,7 @@
             this.Size = new System.Drawing.Size(724, 514);
             this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUpdate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRemove)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             this.ResumeLayout(false);
@@ -134,5 +153,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox btnAdd;
         private System.Windows.Forms.PictureBox btnRemove;
+        private System.Windows.Forms.PictureBox btnUpdate;
     }
 }

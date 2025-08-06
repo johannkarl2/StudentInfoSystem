@@ -103,6 +103,16 @@ namespace StudentInfoSystem
             removestudent.BringToFront();
             removestudent.Location = new Point((this.ClientSize.Width - removestudent.Width) / 2, (this.ClientSize.Height - removestudent.Height) / 2);
         }
+
+        private void btnUpdate_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnUpdate.Image = Properties.Resources.update0;
+        }
+
+        private void btnUpdate_MouseUp(object sender, MouseEventArgs e)
+        {
+            btnUpdate.Image = Properties.Resources.update1;
+        }
     }
 }
 
