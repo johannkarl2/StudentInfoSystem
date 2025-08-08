@@ -50,7 +50,7 @@ namespace StudentInfoSystem
                 MessageBox.Show("Please enter a valid Student ID.");
                 return;
             }
-            string query = "Delete from Student where student_id = @Student_Id";
+            string query = "Update Student set status = 'Not Active' where student_id = @Student_Id";
 
             SqlConnection sqlConnection = new SqlConnection(DatabaseConfig.ConnectionString);
             sqlConnection.Open();

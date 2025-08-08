@@ -19,8 +19,16 @@ namespace StudentInfoSystem
         }
         public void LoadData()
         {
-            string query = "select s.student_id,s.first_name,s.last_name,s.date_of_birth,g.Gender,s.email,s.phone,s.address,s.enrollment_date,s.status,s.role_id from Student as S\r\nleft join Gender as g on g.gender_id = s.gender";
+            string query;
+            if (CBshowNotActive.Checked)
+            {
 
+                 query = "select s.Student_id,s.First_name,s.Last_name,s.Date_of_Birth,g.Gender,u.Username,u.Password,s.Email,s.Phone,s.Address,s.Enrollment_date,s.Status,s.Role_id from Student as S left join Gender as g on g.gender_id = s.gender left join User_login as u on u.Uniq_id = s.student_id";
+            }
+            else
+            {
+                 query = "select s.Student_id,s.First_name,s.Last_name,s.Date_of_Birth,g.Gender,u.Username,u.Password,s.Email,s.Phone,s.Address,s.Enrollment_date,s.Status,s.Role_id from Student as S left join Gender as g on g.gender_id = s.gender left join User_login as u on u.Uniq_id = s.student_id where status = 'Active'";
+            }
             using (SqlConnection conn = new SqlConnection(DatabaseConfig.ConnectionString))
             {
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
@@ -112,6 +120,11 @@ namespace StudentInfoSystem
         private void btnUpdate_MouseUp(object sender, MouseEventArgs e)
         {
             btnUpdate.Image = Properties.Resources.update1;
+        }
+
+        private void CBshowNotActive_CheckedChanged(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

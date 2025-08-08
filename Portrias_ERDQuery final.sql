@@ -8,6 +8,9 @@ create table Gender(
 	gender_id int primary key not null,
 	Gender varchar(50))
 
+create table Department(Department_ID int primary key not null,Department_Name varchar(50))
+
+
 create table Admin(
 	admin_id int primary key not null identity (1,1),
 	email varchar(50),
@@ -65,28 +68,35 @@ create table User_login(
 	Uniq_id int not null)
 	
 create table Logs(Log_ID int primary key not null identity(1,1),DateTime DateTime default getdate(),Name Varchar(50),Action varchar(100))
-create table Department(Department_ID int primary key not null,Department_Name varchar(50))
 
 
 
 insert into Role(role,role_id) values ('Admin',1),('Teacher',2),('Student',3)
 insert into Gender (gender_id,Gender) values (1,'Male'),(2,'Female')
+insert into Department(Department_ID,Department_Name) values (1,'CCS'),(2,'CBM'),(3,'CASP'),(4,'CN'),(5,'CCJ')
 insert into Admin(email,full_name) values ('ccs.JoseRizal@gmail.com','Jose P. Rizal'),('ccs.bonifacio@gmail.com','andres bonifacio')
 insert into Teacher(first_name,last_name,email,phone,hire_date,department,specialization,status,role_id) values ('tandang','sora','ts@gmail.com',205468461,GETDATE(),1,'OOP','Active',2)
 insert into Student(first_name,last_name,date_of_birth,gender,email,phone,address,enrollment_date,status,role_id) values 
 ('yowan','karl','2002-10-02',1,'yowan@gmail.com',123456,'lapulapu','2025-08-03','Active',3),('John Paul','Cantila','2007-6-17',1,'ccs.cantila@gmail.com',123456,'mingla',GETDATE(),'Active',3)
 insert into User_login(username,password,role_id,Uniq_id) values ('admin','123',1,1),('teacher','123',2,1),('andres','123',1,2),('student1','123',3,1)
-insert into Department(Department_ID,Department_Name) values (1,'CCS'),(2,'CBM'),(3,'CASP'),(4,'CN'),(5,'CCJ')
 
 
 --show gender as word
 select s.student_id,s.first_name,s.last_name,s.date_of_birth,g.Gender,s.email,s.phone,s.address,s.enrollment_date,s.status,s.role_id from Student as S
 left join Gender as g on g.gender_id = s.gender
+-- add student with userlogin
+DECLARE @new_student_id INT;
+insert into Student(first_name,last_name,date_of_birth,gender,email,phone,address,enrollment_date,status,role_id) 
+values 
+('test','karl','2002-10-02',1,'yowan@gmail.com',123456,'lapulapu','2025-08-03','Active',3)
+SET @new_student_id = SCOPE_IDENTITY();
+insert into User_login(username,password,role_id,Uniq_id) values ('yowan','abc',3,@new_student_id)
+
 
 select COUNT(*) as Number_of_rows
 from Student
 SELECT * FROM student
-delete from User_login
+select * from User_login
 delete from Student 
 ALTER TABLE Teacher
 Add constraint FK_Department  foreign key(department) references Department(department_id);
@@ -102,9 +112,12 @@ Add constraint FK_Department  foreign key(department) references Department(depa
 
 	select t.teacher_id,t.first_name,t.last_name,t.email,t.phone,t.hire_date,d.Department_Name,t.specialization,t.status,t.role_id from Teacher as t
 	left join Department as d on d.Department_ID = t.department
-
 	
-	
+	-- show students with username and password from user login
+	select s.Student_id,s.First_name,s.Last_name,s.Date_of_Birth,g.Gender,u.Username,u.Password,s.Email,s.Phone,s.Address,s.Enrollment_date,s.Status,s.Role_id from Student as S 
+	left join Gender as g on g.gender_id = s.gender
+	left join User_login as u on u.Uniq_id = s.student_id
+	where s.status = 'Active'
 		
 		SELECT *
 FROM User_login AS ul
